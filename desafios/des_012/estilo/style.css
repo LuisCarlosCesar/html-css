@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    /*text-transform: uppercase; >>> transforma o texto em letras maiúscula*/
+    font-variant: small-caps; /*tranforma as letras em maiúsculas, porém a primeira letra da palavra fica maior*/
+    }
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none; /* tira o sublinhado do link*/
+    font-weight: bolder;
+}
+
+a:hover, footer a:hover {
+    text-decoration: underline;/*mostra o sublinhado quando passar o mouse por cima*/
+}
+
+section{ /* serve para todas section, onde manterá uma distancia de 10% do conprimento total vertical*/
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*espacamento entre as lnhas*/
+    padding-left: 30px;
+}
+
+section.normal { /*sintaxe obrigatória*/
+    background-color: white;
+    color: black;
+}
+
+section.imagem { /*sintaxe obrigatória*/
+    background-color: rgb(51, 51, 51);
+    color: white;
+    }
+
+section.imagem > p { /* criado uma caixa, devido a imagem*/
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
