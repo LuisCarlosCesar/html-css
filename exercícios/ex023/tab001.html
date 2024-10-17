@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+        }
+       
+        td{
+            border: 1px solid black;
+            text-align: left;/*alinhamento Horizontal*/
+            vertical-align: top;/*alinhamento vertical  >> top, middle, bottom*/
+        }
+
+        .numero{
+            text-align: right;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!--
+    Hierarqui de Tabela:
+    TABLE =  tabela
+            TABLE ROW = linha de tabela
+        TABLE HEADER = cabecalho de tabela
+        TABLE DATA = dado de tabela
+    -->
+    <h1>Minha Primeira Tabela</h1>
+
+    <table>
+        <tr><!--Primeira Linha-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+
+        <tr><!--segunda Linha-->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+
+        <tr><!--terceira Linha-->
+            <td>A3</td>
+            <td>B3</td>
+            <td class="numero">C3</td>
+        </tr>
+
+        <tr><!--quarta Linha-->
+            <td>A4</td>
+            <td>B4</td>
+            <td class="numero">C4</td>
+        </tr>
+
+    </tr>
+
+    </table>
+</body>
+</html>
