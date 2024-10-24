@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Primeniro formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <!--desliga o lembrete dos ultimos registros na caixa.
+        method = get > padrao do html onde os dados sao mostrados na barra de url - utilizado quando as informacoes nao tem muita importancia
+        method = post > os dados nao sao mostrados na barra de url - utilizado quando as informacoes tem muita importancia, como senha, Num de cartao de credito
+        para melhorar a seguranca é melhor usar o https (criptografado)-->
+        <p><label for="inome">nome: </label>
+            <input type="text" name="nome" id="inome"></p>
+
+        <p><label for="isobrenome">sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="enviar"></p>
+    </form>
+</html>
