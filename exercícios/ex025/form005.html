@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on"></form>
+    <fieldset>
+        <legend>Sexo</legend>
+        <!--, usar o name com o mesmo nome-para o botao radio possa ativar um ou o outro-->
+        <input type="radio" name="sexo" id="isxmas">
+        <label for="isxmas">Masculino</label>
+
+        <input type="radio" name="sexo" id="isxfem">
+        <label for="isxfem">Femenino</label>
+    </fieldset>
+
+    <fieldset>
+        <!--para poder flegar tanto na caixa como no nome, usar o <label>-->
+        <legend>Tipos de Esportes</legend>
+        <input type="checkbox" name="esbas" id="iesbas">
+        <label for="iesbas">Basquete</label><br>
+
+        <input type="checkbox" name="esfut" id="iesfut">
+        <label for="iesfut">Futebol</label><br>
+
+        <input type="checkbox" name="esten" id="iesten">
+        <label for="iesten">Tenis</label><br>
+
+        <input type="checkbox" name="esnat" id="iesnat">
+        <label for="iesnat">Natacao</label><br>
+
+        <input type="checkbox" name="esvol" id="iesvol">
+        <label for="iesvol">Voley</label><br>
+    </fieldset>
+
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+</body>
+</html>
