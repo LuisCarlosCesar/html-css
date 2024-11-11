@@ -18,14 +18,41 @@ header {
     background-color: gray;
     color: white;
     padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;/*para fazer as caixas de opcao quebrarem para baixo*/
+    justify-content: space-between;/* para fazer o menu site ficar do lado esquerdo e os itens de opcao ficarem do lado direito*/
+    align-items: center;/*no eixo tranversal vai centralizar*/
 }
 
 header > h1 {
-    border: 1px dotted black;
+    /*border: 1px dotted black;*//*para construir e poder visualisar o container*/
+    flex:  0 0 200px;/*menu site nao vai crescer e nm espichar e vai ter tamnho 200px*/
+    text-shadow: 2px 2px 2px rgb(0, 0, 0, 404);;
 }
 
 header > nav {
-    border:  1px dotted black;
+    /*border:  1px dotted black;*//*para construir e poder visualisar o container*/
+
+    display: flex;/*para transformar em um container flexivel*/
+    flex-flow: row wrap;
+    justify-content: flex-end;/*para a quebra deo menu de opcao quebrar no lado esquerdo*/
+}
+
+header > nav > a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header > nav > a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color .5s;
 }
 
 main{
