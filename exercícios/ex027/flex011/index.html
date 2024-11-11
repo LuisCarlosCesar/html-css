@@ -3,33 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexible Box4_b_4</title>
+    <title>Flexible Box_11</title>
     <STyle>
         div.conteiner {
             background-color:lightsalmon;
-            height: 300px;
             display: flex;
             flex-flow: row nowrap;
-            justify-content: space-between;
-            align-items: stretch;
         }
         div.item{
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
-            
+            flex-basis: 200px;
+        }
+
+        div#cxA{
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+
+        div#cxB{
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        div#cxC{
+            flex-shrink: 8;
+            flex-grow: 1;
         }
     </STyle>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+       
     </div>
     
 </body>
